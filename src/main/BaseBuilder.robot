@@ -3,7 +3,7 @@ Library                         Selenium2Library
 
 *** Variables ***
 ${Browser}                      CHROME
-${RESOURCES}                    /Users/nugroho_s/Project/RobotFramework/automation-company-dashboard-robot-framework/src/main
+${RESOURCES}                    /src/main
 
 *** Keywords ***
 Open Browser Test Setup         [Arguments]         ${URL}

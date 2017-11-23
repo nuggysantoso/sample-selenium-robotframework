@@ -5,7 +5,7 @@ Test Setup                              Open Browser Test Setup                 
 Test Teardown                           Close Window
 
 *** Variables ***
-${RESOURCES}                            /Users/nugroho_s/Project/RobotFramework/automation-company-dashboard-robot-framework/src/main
+${RESOURCES}                            ${CURDIR}/src/main
 ${HOST}                                 172.17.10.75:8080
 ${COMPANY-DASHBOADR-URL}                /company-dashboard/resources/html/insight/overviewIndex.html
 
