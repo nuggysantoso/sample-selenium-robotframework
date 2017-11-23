@@ -3,7 +3,6 @@ Library                         Selenium2Library
 
 *** Variables ***
 ${Browser}                      CHROME
-${RESOURCES}                    /src/main
 
 *** Keywords ***
 Open Browser Test Setup         [Arguments]         ${URL}
