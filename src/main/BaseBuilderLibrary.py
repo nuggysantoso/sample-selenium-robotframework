@@ -16,7 +16,7 @@ class BaseBuilderLibrary(object):
 
     def get_platform(self):
         self.platform_name = sys.platform
-        self.browser_path = os.getcwd()
+        self.browser_path = str(os.path.dirname(os.getcwd()))
         return self.platform_name
 
     # def set_browser(self, browser_name):
@@ -25,11 +25,12 @@ class BaseBuilderLibrary(object):
     def set_browser_path(self, urlSite):
         self.get_platform()
         if self.platform_name =='darwin':
-            webdriver.Chrome(executable_path=self.browser_path + '/driver/mac/chromedriver')
-            Selenium2Library().open_browser(browser='chrome', url = urlSite)
+            driver1 = webdriver.Chrome(executable_path=self.browser_path+'/resources/driver/mac/chromedriver')
+            driver1.get(urlSite)
+            Selenium2Library.driver = driver1
         elif self.platform_name == 'win32':
             self.browser_path = '..src/resources/windows/chromedriver'
             print(self.browser_path)
         else:
-            self.browser_path = '..src/resources/linux/chromedriver'
+            self.browser_path = '..src/resources/driver/linux/chromedriver'
             print(self.browser_path)
