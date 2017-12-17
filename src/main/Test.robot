@@ -12,6 +12,6 @@ First Setup
 *** Test Case ***
 Google 01
     First Setup
-    Element Should Visible By Id     gb_70
+    Element Should Visible By Id     gb_200
     Click Element                    gb_70
     
